@@ -836,4 +836,59 @@
 }
 
 // end choose
+// start offers
+
+.offers{
+	display: flex;
+	min-height: 560px;
+	color: #fff;
+	&__img{
+		margin-bottom: 40px;
+	}
+	&__title{
+		font-size: 36px;
+		line-height: 42px;
+		margin-bottom: 20px;
+	}
+	&__text{
+		margin-bottom: 40px;
+		max-width: 590px;
+		width: 100%;
+		margin: 0 auto 40px;
+	}
+	&__btn{
+		color: #fff;
+		border: 1px solid #fff;
+		padding: 8px 27px;
+		width: 190px;
+		transition: all .3s;
+	}
+}
+.offers__box{
+	text-align: center;
+	flex: 1 1 50%;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	padding: 90px 0;
+}
+.offers-sell{
+	background-color: $blue;
+	background-image: url(../images/offers-bg.png);
+	.offers__btn:hover{
+		background-color: #fff;
+		color: $blue;
+	}
+}
+.offers-buy{
+	background-color: $purple;
+	background-image: url(../images/offers-buy-bg.png);
+	.offers__btn:hover{
+		background-color: #fff;
+		color: $purple;
+	}
+}
+
+
+// end offers
+
 
