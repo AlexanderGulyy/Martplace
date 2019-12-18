@@ -29,6 +29,11 @@ $(function(){
 		nextArrow: '<button type="button" class="slick-next"><span class="lnr lnr-chevron-right"></span></button>',
 	});
 
+	$('.header__burger').click(function () {
+		$(".header__burger").toggleClass('show-burger'),
+		$(".nav-menu").slideToggle();
+	});
+
 	var mixer = mixitup('.products__items');
 	
 });

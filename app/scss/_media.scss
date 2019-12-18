@@ -1,0 +1,177 @@
+@media (max-width: 1200px){
+	.footer__top-inner{
+		flex-wrap: wrap;
+	}
+	.footer__newsletter{
+		flex-basis: 100%;
+		margin-top: 10px;
+	}
+	.footer__newsletter form{
+		max-width: 350px;
+		input{
+			width: 100%;
+		}
+	}
+	.footer__title{
+		margin-bottom: 15px;
+		margin-top: 10px;
+	}
+	.footer__top-inner{
+		padding: 50px 0 45px;
+	}
+	.nav-menu__pages:hover .nav-box__pages{
+		display: none;
+	}
+}
+
+@media (max-width: 1100px){
+	.header__search input:focus{
+		width: auto;
+	}
+}
+
+@media (max-width: 940px){
+	.header-bottom__inner{
+		position: relative;
+	}
+	.header__burger{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		display: flex;
+	}
+	.nav-menu{
+		display: none;
+	}
+	.header__search form {
+		position: absolute;
+		top: 15px;
+		left: 100%;
+	}
+	.nav-menu{
+		position: absolute;
+		background-color: #fff;
+		left: -15px;
+		top: 100%;
+		width: 100vw;
+		z-index: 7;
+		&__list{
+			background-color: #fff;
+			display: block;
+			width: 100%;
+			li{
+				text-align: center;
+			}
+			a{}
+		}
+		.nav-box{
+			width: 100%;
+			left: 0;
+			&__list{
+				width: 100%;
+			}
+		}
+	}
+	.nav-menu__list .nav-menu__item+.nav-menu__item{
+		margin: 0;
+	}
+	.nav-box__home,
+	.nav-box__wordpress,
+	.nav-box__products{
+		top: 100%;
+		left: 35%;
+	}
+}
+
+@media (max-width: 900px){
+	.footer__top-inner{
+		justify-content: flex-start;
+	}
+	.footer__info{
+		flex-basis: 100%;
+		margin-bottom: 10px;
+	}
+	.footer__links{
+		flex-basis: 50%;
+		padding: 0;
+	}
+	.footer__bottom-inner{
+		font-size: 14px;
+		text-align: center;
+	}
+}
+
+@media (max-width: 840px){
+	.header__icons{
+		display: none;
+	}
+}
+
+@media (max-width: 640px){
+	.header__logo{
+		display: none;
+	}
+	.header__content{
+		justify-content: space-between;
+		width: 100%;
+	}
+}
+
+
+@media (max-width: 480px){
+	.header__search input{
+		width: 310px;
+	}
+	.header__search input:focus{
+		width: 310px;
+	}
+	.header__usser-avatar{
+		margin-right: 10px;
+	}
+}
+
+
+@media (max-width: 420px){
+	.footer__newsletter form{
+		max-width: 310px;
+		input{
+			height: 45px;
+		}
+		button{
+			height: 45px;
+			right: -5px;
+		}
+	}
+	.footer__links{
+		flex-basis: 100%;
+	}
+	.footer__social li+li {
+		margin-left: 0px;
+	}
+	.header__search input{
+		width: 220px;
+		padding: 10px 50px 10px 15px;
+	}
+	.header__search input:focus{
+		width: 220px;
+	}
+	.header__search button{
+		width: 50px;
+	}
+	.header__btn-seller{
+		margin-right: 20px;
+	}
+	.header__usser-avatar{
+		display: none;
+	}
+}
+
+
+
+
+
+@media (min-width: 941px){
+	.nav-menu{
+		display: block !important;
+	}
+}
