@@ -1,8 +1,8 @@
 html{
-    box-sizing: border-box;
+	box-sizing: border-box;
 }
 *, *::before, *::after{
-    box-sizing: inherit;
+	box-sizing: inherit;
 }
 h1, h2, h3, h4, h5, h6{
 	padding: 0;
@@ -117,4 +117,51 @@ body {
 	transform: rotate(315deg);
 	top: 0;
 	height: 3px;
+}
+.breadcrumbs{
+	&__inner{
+		overflow: hidden;
+		width: 1200px;
+	}
+	&__list{
+		li{
+			display: inline-block;
+			position: relative;
+			& + li{
+				padding-left: 24px;
+				&::before{
+					content: '/';
+					position: absolute;
+					left: 8px;
+					color: #fff;
+				}
+			}
+			&:last-child{
+				a,
+				span{
+					color: #bfcad7;
+				}
+			}
+		}
+		a{
+			color: #fff;
+			font-size: 15px;
+		}
+	}
+}
+.sub-header{
+	background-image: linear-gradient(right, rgb(13,62,242) 0%, rgb(64,48,201) 46%, rgb(114,33,160) 100%);
+	padding: 55px 0;
+	h2{
+		color: #fff;
+		font-size: 30px;
+		font-weight: 500;
+		line-height: 1.2;
+	}
+}
+.container-fluid{
+	flex-basis: calc(66.667% - 15px);
+}
+.container-aside{
+	flex-basis: calc(33.333% - 15px);
 }
