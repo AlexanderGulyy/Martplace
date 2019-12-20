@@ -57,6 +57,13 @@
 }
 
 @media (max-width: 940px){
+	.pricing__box{
+		flex-direction: column;
+	}
+	.pricing__item{
+		width: 50%;
+		margin: 20px auto;
+	}
 	.header-bottom__inner{
 		position: relative;
 	}
@@ -143,6 +150,9 @@
 }
 
 @media (max-width: 840px){
+	.pricing__item{
+		width: 70%;
+	}
 	.header__icons{
 		display: none;
 	}
@@ -163,6 +173,9 @@
 }
 
 @media (max-width: 640px){
+	.pricing__item{
+		width: 100%;
+	}
 	.header__logo{
 		display: none;
 	}
@@ -184,6 +197,12 @@
 			padding-left: 10px;
 			padding-right: 10px;
 		}
+	}
+	.pricing{
+		padding: 30px 0 30px;
+	}
+	.pricing__box{
+		margin-top: 0;
 	}
 }
 
@@ -312,6 +331,12 @@
 	}
 	.navigation-menu li:nth-child(1){
 		margin-right: 0;
+	}
+	.pricing__item-list li{
+		font-size: 15px;
+	}
+	.pricing__item{
+		padding: 0 10px;
 	}
 }
 

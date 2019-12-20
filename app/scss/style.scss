@@ -2167,15 +2167,128 @@ a.feedback__link{
 
 
 // end terms
-.BG {
-  
-  position: absolute;
-  left: 390px;
-  top: 421px;
-  width: 1140px;
-  height: 1562px;
-  z-index: 64;
+
+// start pricing
+
+.pricing{
+	background-color: #eff1f5;
+	padding: 100px 0 110px;
 }
+.pricing__iiner{
+	text-align: center;
+}
+.pricing__title{
+	h3{
+		padding-bottom: 22px;
+	}
+	span{
+		color: $blue;
+	}
+	p{
+		max-width: 690px;
+		margin: 0px auto;
+		padding-bottom: 25px;
+	}
+}
+.pricing__box{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 30px;
+}
+.pricing__item{
+	border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+  border-top: 3px solid #ff6a6c;
+  padding: 0 30px;
+  flex-basis: calc(33.333% - 15px);
+}
+.pricing__item--business{
+	border-top-color: $blue;
+	.pricing__item-link{
+		background-color: $blue;
+	}
+}
+.pricing__item--agency{
+	border-top-color: #feb71d;
+	.pricing__item-link{
+		background-color: #feb71d;
+	}
+}
+.pricing__item-title{
+	font-size: 24px;
+	font-weight: 500;
+	color: #000;
+	line-height: 32px;
+	padding: 17px 0 20px;
+	border-bottom: 1px solid #e8ebf0;
+}
+.pricing__item-price{
+	font-size: 36px;
+	color: #000;
+	margin: 25px 0;
+	display: inline-block;
+	position: relative;
+	&::before{
+		content: '$';
+		position: absolute;
+		top: -5px;
+		left: -10px;
+		font-size: 18px;
+	}
+	&::after{
+		content: '/month';
+		position: absolute;
+		right: -54px;
+		bottom: -7px;
+		font-size: 15px;
+		color: #555;
+	}
+}
+.pricing__item-list{
+	text-align: left;
+	padding-top: 10px;
+	li{
+		padding-left: 23px;
+		position: relative;
+		margin-bottom: 5px;
+		&::before{
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+			height: 7px;
+			width: 7px;
+			border-radius: 50%;
+			background-color: #c5cad4;
+		}
+		span{
+			color: #000;
+			font-weight: 500;
+		}
+		span.lnr{
+			font-size: 18px;
+			color: #555;
+			font-weight: 400;
+			margin-left: 10px;
+			line-height: 1;
+		}
+	}
+}
+.pricing__item-link{
+	display: block;
+	margin: 30px 0;
+	padding: 15px 0;
+	background-color: #ff6a6c;
+	border-radius: 4px;
+	color: #fff;
+	font-size: 18px;
+	font-weight: 500;
+}
+
+
+// end pricing
 
 
 
