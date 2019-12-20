@@ -2140,6 +2140,42 @@ a.feedback__link{
 
 // end blog-v02
 
+// start terms
+
+.terms{
+	background-color: #eff1f5;
+	padding: 60px 0 80px;
+}
+.terms__inner{
+	background-color: #fff;
+	position: relative;
+	border-radius: 4px;
+  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+}
+.terms__item{
+	padding-bottom: 40px;
+	h3{
+		line-height: 88px;
+		padding: 0 25px;
+	}
+	p{
+		border-top: 1px solid #e8ebf0;
+		margin: 0;
+		padding: 35px 25px 20px;
+	}
+}
+
+
+// end terms
+.BG {
+  
+  position: absolute;
+  left: 390px;
+  top: 421px;
+  width: 1140px;
+  height: 1562px;
+  z-index: 64;
+}
 
 
 

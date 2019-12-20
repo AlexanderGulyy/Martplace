@@ -175,6 +175,16 @@
 		padding-left: 5px;
 		padding-right: 5px;
 	}
+	.terms{
+		padding: 25px 0 30px;
+	}
+	.terms__item{
+		h3,
+		p{
+			padding-left: 10px;
+			padding-right: 10px;
+		}
+	}
 }
 
 @media (max-width: 510px){
@@ -211,6 +221,9 @@
 	.navigation-menu__btn{
 		width: 40px;
 	}
+	.terms__item h3{
+		font-size: 23px;
+	}
 }
 
 @media (max-width: 480px){
@@ -238,6 +251,14 @@
 		iframe{
 			height: 300px;
 		}
+	}
+	.terms__item h3{
+		line-height: 30px;
+		padding-top: 20px;
+		margin-bottom: 20px;
+	}
+	.terms__item{
+		padding-bottom: 10px;
 	}
 }
 
