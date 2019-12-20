@@ -2150,7 +2150,7 @@ a.feedback__link{
 	background-color: #fff;
 	position: relative;
 	border-radius: 4px;
-  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
 }
 .terms__item{
 	padding-bottom: 40px;
@@ -2197,11 +2197,11 @@ a.feedback__link{
 }
 .pricing__item{
 	border-radius: 4px;
-  background-color: rgb(255, 255, 255);
-  box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
-  border-top: 3px solid #ff6a6c;
-  padding: 0 30px;
-  flex-basis: calc(33.333% - 15px);
+	background-color: rgb(255, 255, 255);
+	box-shadow: 0px 2px 4px 0px rgba(108, 111, 115, 0.1);
+	border-top: 3px solid #ff6a6c;
+	padding: 0 30px;
+	flex-basis: calc(33.333% - 15px);
 }
 .pricing__item--business{
 	border-top-color: $blue;
@@ -2289,6 +2289,108 @@ a.feedback__link{
 
 
 // end pricing
+
+// start how-it-work
+
+.sub-header.sub-header__how-it{
+	text-align: center;
+	padding-bottom: 20px;
+	.sub-header__title{
+		max-width: 405px;
+		margin: 20px auto 65px;
+		h2{
+			line-height: 1.5;
+		}
+		span{
+			font-weight: 300;
+		}
+	}
+	.breadcrumbs__inner {
+		overflow: hidden;
+		width: auto;
+		max-width: 1140px;
+	}
+}
+.how-work{
+	background-color: #fff;
+	&.how-work__upload{
+		background-color: #eff1f5;
+	}
+}
+.how-work__inner{
+	display: flex;
+	justify-content: space-between;
+	padding: 95px 0;
+}
+.how-work__img{
+	flex-basis: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	max-width: 458px;
+	img{
+		max-width: 100%;
+	}
+}
+.how-work__content{
+	flex-basis: 50%;
+	padding-left: 110px;
+	padding-top: 30px;
+	p{
+		margin-top: 40px;
+		margin-bottom: 30px;
+		max-width: 458px;
+	}
+}
+.how-work__link{
+	background-color: #fff;
+	box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.1);
+	color: $blue;
+	line-height: 42px;
+	text-align: center;
+	width: 170px;
+	transition: all .3s;
+	&:hover{
+		background-color: $blue;
+		color: #fff;
+	}
+}
+.how-work__upload{
+	.how-work__content{
+		order: 1;
+		padding-left: 0;
+	}
+	.how-work__img{
+		order: 2;
+	}
+}
+.sub-header.sub-header__bottom{
+	text-align: center;
+	padding: 80px 0 110px;
+	h2{
+		font-size: 36px;
+	}
+	p{
+		font-size: 18px;
+		color: #e7e7e7;
+		margin-bottom: 40px;
+	}
+	a{
+		background-color: #fff;
+		color: $blue;
+		line-height: 42px;
+		text-align: center;
+		width: 170px;
+		transition: all .3s;
+		&:hover{
+			background-color: $blue;
+			color: #fff;
+		}
+	}
+}
+
+// end how-it-work
+
 
 
 
