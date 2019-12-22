@@ -184,7 +184,10 @@
 		right: 28px;
 	}
 }
-.box-notifications{}
+.header-icons__box,
+.header__usser{
+	z-index: 12;
+}
 .box-notifications__top,
 .box-messages__top{
 	display: flex;
@@ -2642,9 +2645,6 @@ a.feedback__link{
 }
 .favourites-product__inner{
 	display: flex;
-}
-
-.favourites-product__inner{
 	flex-wrap: wrap;
 	.product-card.list{
 		flex-basis: 100%;
