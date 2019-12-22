@@ -11,7 +11,6 @@ $(function(){
 		rating: 4.5,
 		starWidth: "13px",
 		readOnly: true,
-		
 
 	});
 
@@ -30,9 +29,22 @@ $(function(){
 	});
 
 	$('.header__burger').click(function () {
-		$(".header__burger").toggleClass('show-burger'),
+		$(".header__burger").toggleClass('show-burger');
 		$(".nav-menu").slideToggle();
 	});
+
+	$('input[type="checkbox"], select').styler();
+
+	$('.icon-th').on('click', function(){
+    	$('.favourites-product__inner .product-card').removeClass('list');
+    	$('.icon-th').addClass('sort-card');
+    	$('.icon-th-list').removeClass('sort-card');
+    });
+    $('.icon-th-list').on('click', function(){
+    	$('.favourites-product__inner .product-card').addClass('list');
+    	$('.icon-th-list').addClass('sort-card');
+    	$('.icon-th').removeClass('sort-card');
+    });
 
 	var mixer = mixitup('.products__items');
 	

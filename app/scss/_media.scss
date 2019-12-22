@@ -47,12 +47,25 @@
 		max-width: 360px;
 		margin: 0 auto;
 	}
+	.favourites-product{
+		.product-card{
+			flex-basis: calc(49% - 15px);
+			min-height: auto;
+		}
+	}
+	.favourites-menu__btn{
+		display: none;
+	}
+	.favourites-product__inner .product-card:hover .product-card__box-links{
+		width: 100%;
+	}
 }
 
 @media (max-width: 1100px){
 	.header__search input:focus{
 		width: auto;
 	}
+
 }
 
 @media (max-width: 1000px){
@@ -66,6 +79,10 @@
 		order: 3;
 		padding-left: 70px;
 	}
+	.favourites-menu__items{
+		display: none;
+	}
+	
 }
 
 @media (max-width: 940px){
@@ -99,7 +116,7 @@
 		left: -15px;
 		top: 100%;
 		width: 100vw;
-		z-index: 7;
+		z-index: 27;
 		&__list{
 			background-color: #fff;
 			display: block;
@@ -176,6 +193,11 @@
 			padding: 0 10px;
 		}
 	}
+	.favourites-product{
+		.product-card{
+			flex-basis: 100%;
+		}
+	}
 }
 
 @media (max-width: 790px){
@@ -184,7 +206,37 @@
 	}
 }
 
+@media (max-width: 750px){
+	.favourites-menu__inner{
+		flex-wrap: wrap;
+		padding-top: 20px;
+	}
+	.favourites-menu__title{
+		flex-basis: 100%;
+		text-align: center;
+		padding-bottom: 10px;
+	}
+	.favourites-menu__filter .jq-selectbox__select{
+		margin-top: -10px;
+	}
+	.favourites-menu__filter .jq-selectbox__dropdown{
+		top: 31px !important;
+	}
+	.favourites-menu__filter::after,
+	.favourites-menu__filter::before{
+		display: none;
+	}
+	.favourites-menu__price .jq-selectbox{
+		margin-top: -3px;
+		border: none;
+	}
+	.favourites-menu__filter span{
+		top: 35%;
+	}
+}
+
 @media (max-width: 640px){
+	
 	.pricing__item{
 		width: 100%;
 	}
@@ -223,9 +275,49 @@
 	.sub-header.sub-header__bottom{
 		padding: 30px 0;
 	}
+	.login-box{
+		form{
+			padding: 0 15px;
+		}
+		.login-box__text,
+		.login-box__bottom{
+			padding-left: 15px;
+			padding-right: 15px;
+		}
+	}
+	.favourites-product{
+		padding: 30px 0;
+	}
 }
 
+
 @media (max-width: 510px){
+	.product-card__top,
+	.product-card__center,
+	.product-card__bottom{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.product-card__price{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.favourites-menu__price .jq-selectbox{
+		width: 160px;
+		padding-left: 0;
+	}
+	.favourites-menu__filter{
+		padding-left: 0;
+	}
+	.favourites-menu__filter .jq-selectbox__dropdown{
+		left: -10px;
+	}
+	.favourites-menu__filter{
+		width: 105px;
+	}
+	.favourites-menu__filter .jq-selectbox__dropdown{
+		width: 120px;
+	}
 	.sub-header.sub-header__bottom h2{
 		font-size: 28px;
 	}
