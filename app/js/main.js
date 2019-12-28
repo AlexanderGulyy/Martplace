@@ -11,7 +11,12 @@ $(function(){
 		rating: 4.5,
 		starWidth: "13px",
 		readOnly: true,
+	});
 
+	$(".star-rate__single").rateYo({
+		rating: 4.5,
+		starWidth: "20px",
+		readOnly: true,
 	});
 
 	$('.weekly-slider').slick({
@@ -33,7 +38,7 @@ $(function(){
 		$(".nav-menu").slideToggle();
 	});
 
-	$('input[type="checkbox"], select').styler();
+	$('input[type="checkbox"], input[type="radio"], select').styler();
 
 	$('.icon-th').on('click', function(){
     	$('.favourites-product__inner .product-card').removeClass('list');
@@ -45,6 +50,20 @@ $(function(){
     	$('.icon-th-list').addClass('sort-card');
     	$('.icon-th').removeClass('sort-card');
     });
+
+    $(function(){
+
+$('.tab-title li').not('.active').click(function(){
+    var index = $(this).index();
+    var content = $('.tab-content li').eq(index);
+    $(this).addClass('active').siblings().removeClass('active');
+    $('.tab-content li').css('display', 'none').eq(index).css('display', 'block');
+});
+
+    $('.tab-title li:first').addClass('active');
+    $('.tab-content li:first').css('display', 'block');
+
+});
 
 	var mixer = mixitup('.products__items');
 	
